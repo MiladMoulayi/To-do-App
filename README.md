@@ -1,0 +1,3 @@
+# To-Do App
+
+This application was created using the Django framework for a class assignment for Justice Through Code. The To-Do App has full CRUD (Create, Read, Update, & Delete) functionality. It can create tasks, display them on both a home page view and a task detail view (read), edit the task descriptions (update), and delete the tasks. It also features comments and tags that can be added to each task and can be viewed in the task detail view. This app involved extensive use of Django's built-in SQLite database, and most of the work involved referring to tables within the database, which utilizes foreign keys for computing optimization and clean code.
