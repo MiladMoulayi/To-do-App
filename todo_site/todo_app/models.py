@@ -4,3 +4,8 @@ from django.db import models
 
 class Task(models.Model):
     description = models.CharField(max_length=255)
+
+class Comment(models.Model):
+    body = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
