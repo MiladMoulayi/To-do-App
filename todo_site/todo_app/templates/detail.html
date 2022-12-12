@@ -25,11 +25,24 @@
         <input type="submit" name="add" value="Add" />
     </form>
 
+    <form method="POST">
+        {% csrf_token %}
+        {{ tag_form }}
+        <input type="submit" name="tag" value="Tag" />
+    </form>
+
     <ul>
         {% for comment in comment_list %}
             <li>{{ comment.body }}</li>
         {% endfor %}
     </ul>
+
+    <div>
+        {% for tag in tag_list %}
+        {{ tag.name }} |
+        {% endfor %}
+    </div>
+
 
 
 </body>
